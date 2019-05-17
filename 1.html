@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="2.css">
+  <script src="3.js"></script>
+</head>
+<body>
+
+
+
+<div class="background">
+</div>
+
+
+<div class="midground">  
+
+<div class="text-block1">
+<p id="textt">You can do it</p>
+</div>
+
+<div id="mk">
+</div>
+
+
+</div>
+
+
+<div class="foreground">
+</div>
+
+<script type="text/javascript">
+  var arr = ["Чтобы дойти до цели, надо идти. ", "Никогда не бойся делать то, что не умеешь, иначе ничему не научишься.", "Если ты хочешь иметь то, что никогда не имел, тебе придётся делать то, что никогда не делал.", "Пока ты спишь, азиаты учатся."];
+
+var timerId = setInterval(function() {
+  var rand = Math.floor(Math.random() * arr.length);
+
+
+document.getElementById("textt").textContent=arr[rand] ;
+
+}, 10000);
+</script>
+
+</body>
+</html>
+
